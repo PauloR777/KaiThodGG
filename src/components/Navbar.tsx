@@ -1,20 +1,18 @@
 "use client"
 
 import Link from "next/link"
-import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
+import useUserStore from "../store/userStore"
 
 export default function Navbar() {
-  const [name, setName] = useState<string | null>(null)
+  const name = useUserStore((s) => s.name)
+  const logoutStore = useUserStore((s) => s.logout)
   const router = useRouter()
 
-  useEffect(() => {
-    setName(localStorage.getItem("user_name"))
-  }, [])
-
   function logout() {
+    // clear token if you use it
     localStorage.removeItem("auth_token")
-    localStorage.removeItem("user_name")
+    logoutStore()
     router.push("/login")
   }
 
@@ -22,7 +20,7 @@ export default function Navbar() {
     <header className="bg-gradient-to-r from-black via-red-800 to-black p-4">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Logo" className="h-10" />
+          <img src="/file.svg" alt="Logo" className="h-10" />
           <span className="font-bold">Game Giveaway</span>
         </div>
 

@@ -2,19 +2,21 @@
 
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+import useUserStore from "../../store/userStore"
 
 export default function RegisterPage() {
   const router = useRouter()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [name, setName] = useState("")
+  const setNameStore = useUserStore.getState().setName
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!email || !password || !name) return
-    // demo: just set token
+    // demo: just set token and store name
     localStorage.setItem("auth_token", "demo-token")
-    localStorage.setItem("user_name", name)
+    setNameStore(name)
     router.push("/")
   }
 
