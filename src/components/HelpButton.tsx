@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export default function HelpButton() {
@@ -31,7 +32,7 @@ export default function HelpButton() {
         hidden ? "translate-y-24 opacity-0 pointer-events-none" : ""
       }`}
     >
-      แจ้งปัญหา
+      <Link href="/user/help" className="hover:text-red-400">🆘 แจ้งปัญหา</Link>
     </button>
   )
 }

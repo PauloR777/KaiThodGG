@@ -1,4 +1,3 @@
-import HelpButton from "../components/HelpButton"
 
 export default function Home() {
   return (
@@ -72,8 +71,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Floating Help Button (hides when footer is visible) */}
-      <HelpButton />
     </main>
   )
 }

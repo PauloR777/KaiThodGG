@@ -22,8 +22,8 @@ export default function Navbar() {
     <header className="bg-gradient-to-r from-black via-red-800 to-black p-4">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/file.svg" alt="Logo" className="h-10" />
-          <span className="font-bold">Game Giveaway</span>
+          <img src="/KaiThodGG.svg" alt="Logo" className="h-10" />
+          <span className="font-bold">KaiThodGG</span>
         </div>
 
         <nav className="hidden sm:flex gap-6 text-sm font-semibold items-center">
