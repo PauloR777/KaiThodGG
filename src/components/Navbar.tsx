@@ -1,13 +1,15 @@
 "use client"
 
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter, usePathname } from "next/navigation"
 import useUserStore from "../store/userStore"
 
 export default function Navbar() {
   const name = useUserStore((s) => s.name)
   const logoutStore = useUserStore((s) => s.logout)
   const router = useRouter()
+  const pathname = usePathname()
+  const isHome = pathname === "/"
 
   function logout() {
     // clear token if you use it
@@ -25,9 +27,10 @@ export default function Navbar() {
         </div>
 
         <nav className="hidden sm:flex gap-6 text-sm font-semibold items-center">
-          <Link href="#" className="hover:text-red-400">🏠 หน้าหลัก</Link>
-          <Link href="#" className="hover:text-red-400">🛒 ร้านค้า</Link>
-          <Link href="#" className="hover:text-red-400">🔧 บริการอื่นๆ</Link>
+          <Link href="/" className="hover:text-red-400">🏠 หน้าหลัก</Link>
+            <Link href="/menu/shop" className="hover:text-red-400">🛒 ร้านค้า</Link>
+            <Link href="/menu/addmoney" className="hover:text-red-400">🔧 เติมเงิน</Link>
+            <Link href="/menu/history" className="hover:text-red-400">📜 ประวัติการสั่งซื้อ</Link>
 
           {name ? (
             <div className="flex items-center gap-3">
