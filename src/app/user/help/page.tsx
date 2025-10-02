@@ -21,7 +21,7 @@ export default function ReportForm() {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-4">
+    <div className="min-h-screen bg-linear-gradient(135deg, #2d3748, #4a5568) flex items-center justify-center px-4">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg">
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           📢 รายงานปัญหา / ข้อเสนอแนะ

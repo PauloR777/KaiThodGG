@@ -1,4 +1,0 @@
-body {
-  @apply bg-cover bg-center min-h-screen;
-  background-image: url('/bg-image.jpg');
-}

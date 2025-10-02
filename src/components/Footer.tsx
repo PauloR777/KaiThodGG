@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             No.1 เรื่องเติมเกม ต้องนึกถึง KaiThodGG ร้านบริการเติมเกมออนไลน์ชั้นนำ พร้อมบัตรเติมเกมต่างๆ ครบทุกเกม
           </p>
           <p className="text-sm leading-relaxed mb-3">
-            ROV, Valorant, Genshin, Honkai, PUBG Mobile, FreeFire และอื่น ๆ รวมถึง Razer Gold, Riot Card, Roblox Gift Card, Steam Wallet
+            ROV, Valorant, Genshin, Honkai, PUBG Mobile, FreeFire และอื่นๆ อีกมากมาย
           </p>
           <p className="text-sm leading-relaxed">
             บริการ 24 ชั่วโมง เติมไว ราคาถูก ปลอดภัย เชื่อถือได้ พร้อมทีมงานดูแลตลอดเวลา
