@@ -18,7 +18,7 @@ const items = [
 export default function ShopPage() {
   return (
     <AuthGuard>
-      <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white p-6">
+      <div className="min-h-screen bg-linear-gradient(135deg, #ff6b9d, #6a7efc) text-white p-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
