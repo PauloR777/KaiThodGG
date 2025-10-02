@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
 
         {/* Contact Section */}
         <div>
-          <h2 className="text-xl font-bold text-white mb-4">CONTACT</h2>
+          <h2 className="text-xl font-bold text-white mb-4 justify-center">CONTACT</h2>
           <ul className="space-y-2 text-sm">
             <li>
               Line:{" "}
