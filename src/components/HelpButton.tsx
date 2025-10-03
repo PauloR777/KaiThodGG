@@ -26,7 +26,7 @@ export default function HelpButton() {
       <Link href="/user/help" className="flex items-center justify-center w-full h-full">
         {/* ใช้รูป PNG */}
         <Image
-          src="/images/help.png" // เปลี่ยนเป็น path ของรูปคุณ
+          src="/images/Help.png" // filename in public/images is 'Help.png' (case-sensitive)
           alt="แจ้งปัญหา"
           width={32}
           height={32}
