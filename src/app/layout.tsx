@@ -14,15 +14,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="th">
       <body className="bg-black text-white min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">
-          <AuthGuard>{children}</AuthGuard>
-        </main>
-
-        <Footer />
-        {/* Floating Help Button (hides when footer is visible) */}
-        <HelpButton />
-
+          <Navbar />
+          <main className="flex-1">
+            <AuthGuard>{children}</AuthGuard>
+          </main>
+          <Footer />
+          <HelpButton />
       </body>
     </html>
   )
