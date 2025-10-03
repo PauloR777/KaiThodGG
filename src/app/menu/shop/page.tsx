@@ -36,9 +36,12 @@ export default function ShopPage() {
                   <p className="text-sm text-gray-300 mb-4">เติมเกมได้ง่ายและรวดเร็ว</p>
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold">{it.price} บาท</span>
+                    <Link href={`/menu/shop/package?id=${it.id}&title=${encodeURIComponent(it.title)}&price=${it.price}`}>
                     <button className="px-4 py-2 bg-red-600 rounded-lg hover:bg-blue-600 transition duration-300">
                     🛒 เติมเลย
                     </button>
+                    </Link>
+
                   </div>
                 </div>
               </div>
