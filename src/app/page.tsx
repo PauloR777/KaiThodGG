@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
 
@@ -26,9 +28,11 @@ export default function HomePage() {
             <p className="text-lg mb-6">
               อัปเดตเกมใหม่ล่าสุด พร้อมโปรโมชั่นและกิจกรรมพิเศษสำหรับคอเกม
             </p>
-            <button className="px-6 py-3 bg-red-600 rounded-xl hover:bg-blue-600 transition duration-300">
-              🛒 ดูโปรโมชั่นพิเศษ
-            </button>
+            <Link href={`/menu/shop`}>
+              <button className="px-6 py-3 bg-red-600 rounded-xl hover:bg-blue-600 transition duration-300">
+                🛒 ดูโปรโมชั่นพิเศษ
+              </button>
+            </Link>
           </div>
 
           {/* Right Image */}
@@ -59,9 +63,11 @@ export default function HomePage() {
               <img src={game.img} alt={game.name} className="rounded mb-3 h-48 w-full object-cover" />
               <p className="text-lg font-bold">{game.name}</p>
               <p className="text-red-400 mt-2 text-xl">{game.discount}</p>
-              <button className="mt-3 px-4 py-2 bg-red-600 rounded-lg hover:bg-blue-600 transition duration-300">
-                🛒 เติมเลย
-              </button>
+              <Link href={`/menu/shop`}>
+                <button className="mt-3 px-4 py-2 bg-red-600 rounded-lg hover:bg-blue-600 transition duration-300">
+                  🛒 เติมเลย
+                </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -82,9 +88,11 @@ export default function HomePage() {
             >
               <img src={game.img} alt={game.name} className="rounded mb-3 h-48 w-full object-cover" />
               <p className="text-lg font-bold">{game.name}</p>
-              <button className="mt-3 px-4 py-2 bg-red-600 rounded-lg hover:bg-blue-600 transition duration-300">
-                🛒 เติมเลย
-              </button>
+              <Link href={`/menu/addmoney`}>
+                <button className="mt-3 px-4 py-2 bg-red-600 rounded-lg hover:bg-blue-600 transition duration-300">
+                  🛒 เติมเลย
+                </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -112,9 +120,11 @@ export default function HomePage() {
             >
               <img src={game.img} alt={game.name} className="rounded mb-3 h-48 w-full object-cover" />
               <p className="text-lg font-semibold">{game.name}</p>
-              <button className="mt-3 px-4 py-2 bg-red-600 rounded-lg hover:bg-blue-600 transition duration-300">
-                🛒 เติมเลย
-              </button>
+              <Link href={`/menu/addmoney`}>
+                <button className="mt-3 px-4 py-2 bg-red-600 rounded-lg hover:bg-blue-600 transition duration-300">
+                  🛒 เติมเลย
+                </button>
+              </Link>
             </div>
           ))}
         </div>
