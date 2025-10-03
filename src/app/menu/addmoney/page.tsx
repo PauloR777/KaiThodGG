@@ -56,8 +56,15 @@ export default function AddMoneyPage() {
     // Validate file ด้วย Zod
     try {
       paymentProofSchema.parse({ file })
-    } catch (err: any) {
-      alert(err.errors ? err.errors.map((e: any) => e.message).join("\n") : "ไฟล์ไม่ถูกต้อง")
+    } catch (err) {
+      // Narrow to ZodError to avoid using `any` and satisfy eslint
+      if (err instanceof z.ZodError) {
+        const messages = err.issues.map((issue: z.ZodIssue) => issue.message).join("\n")
+        alert(messages || "ไฟล์ไม่ถูกต้อง")
+        return
+      }
+
+      alert("ไฟล์ไม่ถูกต้อง")
       return
     }
 
