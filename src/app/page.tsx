@@ -4,21 +4,27 @@ export default function HomePage() {
   return (
 
     <main className="flex flex-col items-center justify-center p-6 space-y-2 linear-gradient(135deg, #ff6b9d, #6a7efc) text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-gradient-to-r from-[#ff6b9d] to-[#6a7efc] text-white py-3 overflow-hidden rounded-2xl shadow-lg border-2 border-white/20">
-          <div className="animate-marquee whitespace-nowrap">
-            {[...Array(3)].map((_, index) => (
-              <span key={index} className="mx-8 inline-block font-medium text-sm sm:text-base">
-                🎮 อัพเดททุกสัปดาห์! • ✨ โปรโมชั่นพิเศษสำหรับสมาชิก • 🏆 รับสิทธิ์พิเศษมากมาย • 🎯 ลดราคาเพียบ!
-              </span>
-            ))}
-          </div>
 
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <div className="relative bg-gradient-to-r from-[#ff6b9d] to-[#6a7efc] text-white py-3 overflow-hidden rounded-2xl shadow-lg border-2 border-white/20">
+          <div className="animate-marquee w-full">
+            <div className="marquee-track inline-block">
+              {[...Array(3)].map((_, index) => (
+                <span key={index} className="mx-6 inline-block font-medium text-xs sm:text-sm md:text-base">
+                  {/* Shorter on mobile, full on sm+ */}
+                  <span className="inline sm:hidden">🎮 อัพเดท! •✨โปรโมชั่น • 🎯 ลดราคา</span>
+                  <span className="hidden sm:inline">🎮 อัพเดททุกสัปดาห์! • ✨ โปรโมชั่นพิเศษสำหรับสมาชิก • 🎯 ลดราคาเพียบ!</span>
+                </span>
+              ))}
+            </div>
+          </div>
           {/* Gradient overlay เพื่อให้ข้อความค่อยๆ จาง */}
           <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-[#ff6b9d] to-transparent z-10"></div>
           <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-[#6a7efc] to-transparent z-10"></div>
         </div>
       </div>
+
+
       {/* Hero Banner */}
       <div className="w-full bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-800 rounded-2xl p-10 max-w-6xl shadow-lg mt-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
