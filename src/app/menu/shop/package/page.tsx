@@ -116,7 +116,7 @@ export default function PaymentPage() {
               <div className="bg-gray-800 p-6 rounded-2xl text-center border border-gray-700">
                 <p className="text-lg font-semibold mb-4"> สแกน QR เพื่อโอนเงิน</p>
                 <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX..."
+                  src="https://play-lh.googleusercontent.com/x2tHgxlwNJArFrjSzd4stJo2TEP3WsEQfz5B5MZdT7SioP51LXWKuPqeL49IUs4PjMYi"
                   alt="QR Code"
                   className="mx-auto w-56 h-56 rounded-lg shadow-lg border border-gray-700"
                 />

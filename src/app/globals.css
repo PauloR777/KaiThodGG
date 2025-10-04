@@ -88,3 +88,55 @@ footer button {
   animation: marquee 25s linear infinite;
   display: flex;
 }
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  width: 100%;
+  overflow: hidden; /* clip children so rounded container doesn't overflow */
+  position: relative;
+}
+
+/* ทำให้มือถืออ่านง่ายขึ้น */
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 28s; /* ช้าลงหน่อย */
+  }
+}
+
+/* Pause on hover/focus to improve readability and accessibility */
+.animate-marquee:hover,
+.animate-marquee:focus,
+.animate-marquee:active {
+  animation-play-state: paused;
+}
+
+/* Respect user's reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+/* The moving track: duplicates content horizontally and animates left */
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 18s linear infinite;
+}
+
+@media (max-width: 640px) {
+  .marquee-track {
+    animation-duration: 28s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+}
