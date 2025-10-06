@@ -14,7 +14,7 @@ export default function RegisterPage() {
   function onSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!email || !password || !name) return
-    // demo: just set token and store name
+    // token
     localStorage.setItem("auth_token", "demo-token")
     setNameStore(name)
     router.push("/")

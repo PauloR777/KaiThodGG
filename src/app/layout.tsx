@@ -7,7 +7,7 @@ import HelpButton from "../components/HelpButton"
 
 export const metadata: Metadata = {
   title: "KaiThodGG",
-  description: "แจก Key Mortal Kombat 11 ฟรี",
+  description: "เติมเกมได้ดั่งใจ",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

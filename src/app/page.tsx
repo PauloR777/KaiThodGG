@@ -11,7 +11,6 @@ export default function HomePage() {
             <div className="marquee-track inline-block">
               {[...Array(3)].map((_, index) => (
                 <span key={index} className="mx-6 inline-block font-medium text-xs sm:text-sm md:text-base">
-                  {/* Shorter on mobile, full on sm+ */}
                   <span className="inline sm:hidden">🎮 อัพเดท! •✨โปรโมชั่น • 🎯 ลดราคา</span>
                   <span className="hidden sm:inline">🎮 อัพเดททุกสัปดาห์! • ✨ โปรโมชั่นพิเศษสำหรับสมาชิก • 🎯 ลดราคาเพียบ!</span>
                 </span>
@@ -25,10 +24,10 @@ export default function HomePage() {
       </div>
 
 
-      {/* Hero Banner */}
+      {/*Banner */}
       <div className="w-full bg-gradient-to-r from-indigo-900 via-purple-800 to-blue-800 rounded-2xl p-10 max-w-6xl shadow-lg mt-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Left Text */}
+          {/* Left */}
           <div>
             <h1 className="text-4xl font-extrabold mb-4">🎮 แนะนำเกมน่าเล่นประจำสัปดาห์ </h1>
             <p className="text-lg mb-6">
@@ -41,7 +40,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Right Image */}
+          {/* Right */}
           <div className="flex justify-center">
             <img
               src="https://photos5.appleinsider.com/gallery/40883-79111-B3840B94-33C9-4304-96D9-2BEBF83ECBAD-xl.jpg"
@@ -52,7 +51,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Sale Section */}
+      {/* Sale */}
       <section className="max-w-6xl text-center">
         <h2 className="text-3xl font-bold mb-6">🔥 FLASH SALE % </h2>
         <div className="grid md:grid-cols-4 gap-6">
@@ -79,7 +78,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* New Release */}
+      {/* New */}
       <section className="max-w-6xl text-center">
         <h2 className="text-3xl font-bold mb-6">✨ เกมยอดนิยม </h2>
         <div className="grid md:grid-cols-3 gap-6">
@@ -104,7 +103,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Popular Games */}
+      {/* Popular */}
       <section className="max-w-6xl text-center">
         <h2 className="text-3xl font-bold mb-6">💸 เกมทั้งหมด</h2>
         <div className="grid md:grid-cols-4 gap-6">
@@ -136,7 +135,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* News Section */}
+      {/* News */}
       <section className="max-w-4xl text-center mb-40">
         <h2 className="text-3xl font-bold mb-4">📢 ข่าวสารล่าสุด 📢</h2>
         <p>

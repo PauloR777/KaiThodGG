@@ -20,7 +20,7 @@ export default function HistoryPage() {
             </div>
           </div>
 
-          {/* History List */}
+          {/* History*/}
           <div className="bg-gray-900 rounded-xl p-4 shadow max-h-[500px] overflow-y-auto">
             {history.length === 0 ? (
               <p className="text-gray-400 text-center py-10">ยังไม่มีประวัติการทำรายการ</p>

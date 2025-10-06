@@ -57,7 +57,6 @@ export default function AddMoneyPage() {
     try {
       paymentProofSchema.parse({ file })
     } catch (err) {
-      // Narrow to ZodError to avoid using `any` and satisfy eslint
       if (err instanceof z.ZodError) {
         const messages = err.issues.map((issue: z.ZodIssue) => issue.message).join("\n")
         alert(messages || "ไฟล์ไม่ถูกต้อง")
