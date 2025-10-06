@@ -32,7 +32,6 @@ export default function LoginPage() {
       return
     }
 
-    // demo: accept valid credentials
     localStorage.setItem("auth_token", "demo-token")
     setNameStore(name)
     router.push("/")
