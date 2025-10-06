@@ -26,7 +26,7 @@ export default function ShopPage() {
             <Link href="/" className="text-sm text-blue-400 hover:underline">↩ กลับหน้าหลัก</Link>
           </div>
 
-          {/* Product Grid */}
+          {/* Product */}
           <div className="grid md:grid-cols-3 gap-8">
             {items.map((it) => (
               <div key={it.id} className="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300">
